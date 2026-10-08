@@ -9,7 +9,7 @@
 <h3>"Green Bottles"</h3>
 
 <script>
-    {const intGreenBottles = 10;
+    const intGreenBottles = 10;
 
 const arrGreenBottles = [
     ["Grolsch", "No"],
@@ -23,7 +23,7 @@ const arrGreenBottles = [
     ["Fructis", "No"],
     ["Tap water", "Yes!"]
 ];
-    }
+    
 function getBottles(arrBot, intBott) {
     for (let i = 0; i < intBott; i++) {
         const strBottle = arrBot[i][0] + " - " + arrBot[i][1];
@@ -33,6 +33,7 @@ function getBottles(arrBot, intBott) {
             document.write(strBottle + "<br>");
         }
     }
+}
 document.write("<h3>Here are ten green bottles... but are they really green?</h3><p>");
 getBottles(arrGreenBottles, intGreenBottles);
 document.write("</p>");
